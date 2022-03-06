@@ -23,3 +23,4 @@ Route::delete('mentors/{id}', 'MentorController@destroy');
 
 // course endpoints
 Route::post('courses', 'CourseController@create');
+Route::put('courses/{id}', 'CourseController@update');
