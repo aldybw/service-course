@@ -33,3 +33,14 @@ Route::get('chapters/{id}', 'ChapterController@show');
 Route::post('chapters', 'ChapterController@create');
 Route::put('chapters/{id}', 'ChapterController@update');
 Route::delete('chapters/{id}', 'ChapterController@destroy');
+
+// lesson endpoints
+Route::get('lessons', 'LessonController@index');
+Route::get('lessons/{id}', 'LessonController@show');
+Route::post('lessons', 'LessonController@create');
+Route::put('lessons/{id}', 'LessonController@update');
+Route::delete('lessons/{id}', 'LessonController@destroy');
+
+// image course
+Route::post('image-courses', 'ImageCourseController@create');
+Route::delete('image-courses/{id}', 'ImageCourseController@destroy');
