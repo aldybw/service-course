@@ -110,7 +110,7 @@ class MentorController extends Controller
         $mentor->delete();
         return response()->json([
             'status' => 'success',
-            'message' => 'mentor has been deleted'
+            'message' => 'mentor deleted'
         ]);
     }
 }

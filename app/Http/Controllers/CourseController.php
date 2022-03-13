@@ -137,7 +137,7 @@ class CourseController extends Controller
         $course->delete();
         return response()->json([
             'status' => 'success',
-            'message' => 'course has been deleted'
+            'message' => 'course deleted'
         ]);
     }
 }

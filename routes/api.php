@@ -44,3 +44,7 @@ Route::delete('lessons/{id}', 'LessonController@destroy');
 // image course
 Route::post('image-courses', 'ImageCourseController@create');
 Route::delete('image-courses/{id}', 'ImageCourseController@destroy');
+
+// my course
+Route::get('my-courses', 'MyCourseController@index');
+Route::post('my-courses', 'MyCourseController@create');
