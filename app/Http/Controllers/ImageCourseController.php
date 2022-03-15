@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Course;
-use App\ImageCouse;
+use App\ImageCourse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -35,7 +35,7 @@ class ImageCourseController extends Controller
             ], 404);
         }
 
-        $imageCourse = ImageCouse::create($data);
+        $imageCourse = ImageCourse::create($data);
         return response()->json([
             'status' => 'success',
             'data' => $imageCourse
@@ -44,7 +44,7 @@ class ImageCourseController extends Controller
 
     public function destroy($id)
     {
-        $imageCourse = ImageCouse::find($id);
+        $imageCourse = ImageCourse::find($id);
         if (!$imageCourse) {
             return response()->json([
                 'status' => 'error',
